@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+.cities-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cities-list .city {
+  border: 1px solid #000;
+  flex-basis: 33.33%;
+}
+
+.filter-form {
+  padding: 30px;
+}
+
+@media all and (max-width: 1024px) {
+  .cities-list .city {
+    flex-basis: 50%;
+  }
+}
